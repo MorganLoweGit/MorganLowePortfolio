@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <!--three.js reference-->
+        <script async src="https://unpkg.com/es-module-shims @1.8.0/dist/es-module-shims.js"> </script>
+        <script type="importmap"> { "imports": { "three":
+        "https://unpkg.com/three@0.169.0/build/three.module.js" } } </script>
+        <script type="module" src="assets/Slot Wars JS.js"></script>
+    </head>
+    <body>
+        <!--HAMBURGER-->
+        <div class="burger-topnav">
+            <img src="assets/pfp.png">
+            <div id="myLinks">
+                <a href = "index.html" style="margin-top: 50px;"><u><b>Portfolio</b></u></a>
+                <a href = "about.html"><u>About</u></a>
+                <a href = "cv.html"><u>CV</u></a>
+                <div class="nav-socials" style="float: right;">
+                    <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                        <img src="assets\linkedin.png"></img>
+                    </a>
+                    <a href="https://github.com/MorganLoweGit"class="nav-social">
+                        <img src="assets\github.png"></img>
+                    </a>
+                    <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                        <img src="assets\email.png"></img>
+                    </a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <img src="assets\three-horizontal-lines-icon.png" class="nav-burger">
+            </a>
+        </div>
+        <!--NAV-->
+        <div class="topnav">
+            <img src="assets/pfp.png">
+            <a href = "index.html"><u><b>Portfolio</b></u></a>
+            <a href = "about.html"><u>About</u></a>
+            <a href = "cv.html"><u>CV</u></a>
+
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="nav-social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        <img src="assets/Slot Wars GameplayGIF.gif" class="title-img" alt="Slot wars gameplay GIF">
+        <!--HEADER-->
+        <div class="header-container">
+            <h>Slot Wars</h>
+            <h1>Summary</h1>
+            <ul>
+                <li>
+                    Brief: Personal project.
+                </li>
+                <li>
+                    Timeline: September 2024 - present.
+                </li>
+                <li>
+                    "A passion project."
+                </li>
+            </ul>
+        </div>
+
+        <!--GAME LIST-->
+        <div class="game-list-container">
+            <div class="game-list-section">
+                <div class="game-video">
+                    <video width="100%" height="auto" controls loop>
+                        <source src="assets\Slot Wars Gameplay.mp4" type="video/mp4">
+                        Your browser does not support this video
+                    </video>
+                </div>
+                <div class="canvas-box top-margin" id="canvas-box">
+                    <p>
+                        Left click: rotate (hold to pause rotation), scroll wheel: zoom
+                    </p>
+                </div>
+                <div class="text-desc top-margin">
+                    <h>My role:</h>
+                    <p>During my first semester of my second year at university, I challenged myself to also develop a 3D slot 
+                    car racing game, using Unreal Engine 5. I took this opportunity to understand spline components 
+                    and how they can be used in the scene, from the race track, to guardrails, to procedural content generation.</p>
+                    <ul>
+                        <li>
+                            Studied spline components, and created a prototype of the track spline actor.
+                        </li>
+                        <li>
+                            Constructing vehicle movement around Unreal Blueprint timelines.
+                        </li>
+                        <li>
+                            Procedurally generating rumble strip/kerbing during corners.
+                        </li>
+                        <li>
+                            Updated a UI system alongside my pipeline.
+                        </li>
+                        <li>
+                            Learnt Unreal Engine's procedural content generation tools to build forests near the racetrack.
+                        </li>
+                        <li>
+                            "AI" opponent actor with a variable difficulty slider.
+                        </li>
+                    </ul>
+                </div>
+                <h class="top-margin">Softwares I used: </h>
+                <div class="software-section">
+                    <div class="software-element">
+                        <img src="assets/logos/Unreal_Engine-Logo.png">
+                        <p>Unreal Engine</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/Unreal_Engine-Blueprints-Logo.png">
+                        <p>Unreal Engine Blueprints</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/autodesk-maya-logo.png">
+                        <p>Autodesk Maya</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-substance-3d-painter-icon.png">
+                        <p>Adobe Substance Painter 3D</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-audition-icon.png">
+                        <p>Adobe Audition</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-illustrator-icon.png">
+                        <p>Adobe Illustrator</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-photoshop-icon.png">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                </div>
+                <h class="top-margin">My other projects: </h>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="bucketball.html">
+                        <img src="assets\Bucket Ball GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Bucket Ball</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element small-element-margin">
+                    <a href="keyplunderers.html">
+                        <img src="assets\Key Plunderers GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Key Plunderers</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="crumblearena.html">
+                        <img src="assets\Crumble Arena GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Crumble Arena</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element">
+                    <a href="jumpingcaps.html">
+                        <img src="assets\Jumping Caps GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Jumping Caps</h>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="socials top-margin">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/" class="social">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit" class="social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com" class="social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

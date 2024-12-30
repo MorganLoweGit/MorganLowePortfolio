@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!--HAMBURGER-->
+        <div class="burger-topnav">
+            <img src="assets/pfp.png">
+            <div id="myLinks">
+                <a href = "index.html" style="margin-top: 50px;"><u><b>Portfolio</b></u></a>
+                <a href = "about.html"><u>About</u></a>
+                <a href = "cv.html"><u>CV</u></a>
+                <div class="nav-socials" style="float: right;">
+                    <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                        <img src="assets\linkedin.png"></img>
+                    </a>
+                    <a href="https://github.com/MorganLoweGit"class="nav-social">
+                        <img src="assets\github.png"></img>
+                    </a>
+                    <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                        <img src="assets\email.png"></img>
+                    </a>
+                    <div id="simulateDarkMode" class="container" data-theme="light">
+                        <button id="toggleDarkMode" type="button" class="btn-toggle" onclick="toggleDarkMode()">
+                          DARK MODE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h>Morgan Lowe</h>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <img src="assets\three-horizontal-lines-icon.png" class="nav-burger">
+            </a>
+
+        </div>
+        <!--NAV-->
+        <div class="topnav">
+            <img src="assets/pfp.png">
+            <a href = "index.html"><u><b>Portfolio</b></u></a>
+            <a href = "about.html"><u>About</u></a>
+            <a href = "cv.html"><u>CV</u></a>
+            <h>Morgan Lowe</h>
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="nav-social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        <img src="assets/Portfolio Gif Montage.gif" class="title-img" alt="Slot wars gameplay GIF">
+        <!--HEADER-->
+        <div class="header-container">
+            <h>My Portfolio</h>
+        </div>
+
+        <!--GAME LIST-->
+        <div class="game-list-container">
+            <div class="game-list-section top-margin">
+                <div class="element" style="margin-right: 10px;">
+                    <a href="jumpingcaps.html">
+                        <img src="assets\Jumping Caps GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Jumping Caps</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="slotwars.html">
+                        <img src="assets/Slot Wars GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Slot Wars</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="element" style="margin-right: 10px;">
+                    <a href="bucketball.html">
+                        <img src="assets\Bucket Ball GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Bucket Ball</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="keyplunderers.html">
+                        <img src="assets\Key Plunderers GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Key Plunderers</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="crumblearena.html">
+                        <img src="assets\Crumble Arena GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Crumble Arena</h>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="socials top-margin">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="social">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

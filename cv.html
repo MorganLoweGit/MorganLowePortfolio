@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--HAMBURGER-->
+        <div class="burger-topnav">
+            <img src="assets/pfp.png">
+            <div id="myLinks">
+                <a href = "index.html" style="margin-top: 50px;"><u>Portfolio</u></a>
+                <a href = "about.html"><u>About</u></a>
+                <a href = "cv.html"><u><b>CV</b></u></a>
+                <div class="nav-socials" style="float: right;">
+                    <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                        <img src="assets\linkedin.png"></img>
+                    </a>
+                    <a href="https://github.com/MorganLoweGit"class="nav-social">
+                        <img src="assets\github.png"></img>
+                    </a>
+                    <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                        <img src="assets\email.png"></img>
+                    </a>
+                </div>
+            </div>
+            <h>Morgan Lowe</h>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <img src="assets\three-horizontal-lines-icon.png" class="nav-burger">
+            </a>
+
+        </div>
+        <!--NAV-->
+        <div class="topnav">
+            <img src="assets/pfp.png">
+            <a href = "index.html"><u>Portfolio</u></a>
+            <a href = "about.html"><u>About</u></a>
+            <a href = "cv.html"><u><b>CV</b></u></a>
+            <h>Morgan Lowe</h>
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="nav-social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        <img src="assets/Portfolio Gif Montage.gif" class="title-img" alt="Slot wars gameplay GIF">
+        <!--HEADER-->
+        <div class="header-container">
+            <h>CV</h>
+        </div>
+        <div class="game-list-container">
+            <div class="game-desc-section">
+                <div class="text-desc">
+                    <a href="#" download="CV.docx">
+                        <img src="assets/cv.png"><h>Download as a PDF</h>
+                    </a>
+                </div>
+                <div class="text-desc top-margin form-box">
+                    <h>Send an email:</h>
+                    <form action="https://api.web3forms.com/submit" method="POST">Name/Organisation *<br>
+                        <input type="hidden" name="access_key" value="27267341-682a-487d-8974-b58021e5bb8d">
+                        <input type="text" name="name" placeholder="Name/Organisation..." required class="form-text"><br>Email *<br>
+                        <input type="email" name="email" placeholder="Email..." required class="form-text"><br>Message *<br>
+                        <textarea name="message" rows="10" placeholder="Message..." required style="resize: none" class="form-text"></textarea><br>
+                        <input type="submit" value="Send" class="form-button">
+                        <input type="reset" value="Reset" class="form-button">
+                    </form>
+                    <p>Or alternatively, email me at morganwtlowe@gmail.com, or call me at +44 7982939186</p>
+                </div>
+            </div>
+            <div class="socials top-margin">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/" class="social">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit" class="social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com" class="social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

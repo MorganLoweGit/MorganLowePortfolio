@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--HAMBURGER-->
+        <div class="burger-topnav">
+            <img src="assets/pfp.png">
+            <div id="myLinks">
+                <a href = "index.html" style="margin-top: 50px;"><u><b>Portfolio</b></u></a>
+                <a href = "about.html"><u>About</u></a>
+                <a href = "cv.html"><u>CV</u></a>
+                <div class="nav-socials" style="float: right;">
+                    <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                        <img src="assets\linkedin.png"></img>
+                    </a>
+                    <a href="https://github.com/MorganLoweGit"class="nav-social">
+                        <img src="assets\github.png"></img>
+                    </a>
+                    <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                        <img src="assets\email.png"></img>
+                    </a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <img src="assets\three-horizontal-lines-icon.png" class="nav-burger">
+            </a>
+        </div>
+        <!--NAV-->
+        <div class="topnav">
+            <img src="assets/pfp.png">
+            <a href = "index.html"><u><b>Portfolio</b></u></a>
+            <a href = "about.html"><u>About</u></a>
+            <a href = "cv.html"><u>CV</u></a>
+
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="nav-social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        <img src="assets/Crumble Arena GameplayGIF.gif" class="title-img" alt="Crumble arena gameplay GIF">
+        <!--HEADER-->
+        <div class="header-container">
+            <h>Crumble Arena</h>
+            <h1>Summary</h1>
+            <ul>
+                <li>
+                    Brief: College NEA project.
+                </li>
+                <li>
+                    Timeline: December 2022 - July 2023.
+                </li>
+                <li>
+                    "A lesson of workloads."
+                </li>
+            </ul>
+        </div>
+
+        <!--GAME LIST-->
+        <div class="game-list-container">
+            <div class="game-desc-section">
+                <div class="game-video">
+                    <video width="100%" height="auto" controls loop>
+                        <source src="assets\Crumble Arena Gameplay.mp4" type="video/mp4">
+                        Your browser does not support this video
+                    </video>
+                </div>
+                <div class="text-desc top-margin">
+                    <h>My role:</h>
+                    <p>This game was built only using basic imports, including pygame.</p> 
+                    <ul>
+                        <li>
+                            Built a custom animation system using a png spritesheet, where I also drew up my own pixel art assets. 
+                        </li>
+                        <li>
+                            The tilemap used a perlin noise texture, that was then filtered to output a square island shape. 
+                            I then handled what texture from the spritesheet each tile would need to create the ocean, island edges and island itself.
+                        </li>
+                        <li>
+                            I created a system where tiles of the individual tiles of the tilemap would be unloaded and loaded depending on
+                            if they are on the screen, improving performance.
+                        </li>
+                        <li>
+                            I worked using Object Oriented Programming so then my code would maintain some structure and be more efficient, and
+                            inheriting to re-use code for new objects.
+                        </li>
+                        <li>
+                            I used a delta time system to make the game FPS independent.
+                        </li>
+                        <li>
+                            In the later stages of development, I created some UI button elements to create a basic menu system.
+                        </li>
+                        <li>
+                            Created a loading screen to hide the game loading.
+                        </li>
+                        <li>
+                            I never finished this project, but this project taught myself alot about time management, and misunderstanding how much work 
+                            can be done in so much time.
+                        </li>
+                    </ul>
+                </div>
+                <h class="top-margin">Softwares I used: </h>
+                <div class="software-section">
+                    <div class="software-element">
+                        <img src="assets/logos/pygame-icon.png">
+                        <p>Pygame</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/python-icon.png">
+                        <p>Python</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/paint-3d.png">
+                        <p>Paint 3D</p>
+                    </div>
+                </div>
+                <h class="top-margin">My other projects: </h>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="slotwars.html">
+                        <img src="assets\Slot Wars GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Slot Wars</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element small-element-margin">
+                    <a href="bucketball.html">
+                        <img src="assets\Bucket Ball GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Bucket Ball</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="keyplunderers.html">
+                        <img src="assets\Key Plunderers GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Key Plunderers</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element">
+                    <a href="jumpingcaps.html">
+                        <img src="assets\Jumping Caps GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Jumping Caps</h>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="socials top-margin">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="social">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
