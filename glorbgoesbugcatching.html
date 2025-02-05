@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style_minified.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <!--three.js reference-->
+        <script async src="https://unpkg.com/es-module-shims @1.8.0/dist/es-module-shims.js"> </script>
+        <script type="importmap"> { "imports": { "three":
+        "https://unpkg.com/three@0.169.0/build/three.module.js" } } </script>
+        <script type="module" src="assets/Glorb Goes Bug Catching JS.js"></script>
+    </head>
+    <body>
+        <!--HAMBURGER-->
+        <div class="burger-topnav">
+            <img src="assets/pfp.png">
+            <div id="myLinks">
+                <a href = "index.html" style="margin-top: 50px;"><u><b>Portfolio</b></u></a>
+                <a href = "about.html"><u>About</u></a>
+                <a href = "cv.html"><u>CV</u></a>
+                <div class="nav-socials" style="float: right;">
+                    <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                        <img src="assets\linkedin.png"></img>
+                    </a>
+                    <a href="https://github.com/MorganLoweGit"class="nav-social">
+                        <img src="assets\github.png"></img>
+                    </a>
+                    <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                        <img src="assets\email.png"></img>
+                    </a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <img src="assets\three-horizontal-lines-icon.png" class="nav-burger">
+            </a>
+        </div>
+        <!--NAV-->
+        <div class="topnav">
+            <img src="assets/pfp.png">
+            <a href = "index.html"><u><b>Portfolio</b></u></a>
+            <a href = "about.html"><u>About</u></a>
+            <a href = "cv.html"><u>CV</u></a>
+
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="nav-social" style="margin-left: 0">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="nav-social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="nav-social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        <img src="assets/Glorb Goes Bug Catching GameplayGIF.gif" class="title-img" alt="Glorb Goes Bug Catching gameplay GIF">
+        <!--HEADER-->
+        <div class="header-container">
+            <h>Glorb Goes Bug Catching</h>
+            <h1>Summary</h1>
+            <ul>
+                <li>
+                    Brief: Global Game Jam 2025 Entry.
+                </li>
+                <li>
+                    Timeline: January 2025.
+                </li>
+                <li>
+                    "First in-person collaborative game jam."
+                </li>
+            </ul>
+        </div>
+
+        <!--GAME LIST-->
+        <div class="game-list-container">
+            <div class="game-desc-section">
+                <div class="game-video">
+                    <video width="100%" height="auto" controls loop>
+                        <source src="assets\Glorb Goes Bug Catching Gameplay.mp4" type="video/mp4">
+                        Your browser does not support this video
+                    </video>
+                </div>
+                <div class="canvas-box top-margin" id="canvas-box">
+                    <p>
+                        Left click: rotate (hold to pause rotation), scroll wheel: zoom
+                    </p>
+                </div>
+                <div class="text-desc top-margin">
+                    <h>My role:</h>
+                    <p>
+                        Glorb Goes Bug Catching is a global game jam entry that I developed with 4 team members over the course of two and a half days. 
+                        I was primarily responsible for level design and the asset creation pipeline.
+                    </p>
+                    <ul>
+                        <li>
+                            Created 2 3D models, being the bubble gun used by the character and the robot companion.
+                        </li>
+                        <li>
+                            Cleaned and unwrapped said 3D models for texturing.
+                        </li>
+                        <li>
+                            Applied textures to the models in Substance Painter 3D.
+                        </li>
+                        <li>
+                            Managed version control to keep the project organized and up to date.
+                        </li>
+                        <li>
+                            Coordinated with the team to track progress and prioritize tasks.
+                        </li>
+                        <li>
+                            Rigged the robot's wheel tracks for a moving animation.
+                        </li>
+                        <li>
+                            Created the terrain and foliage that the player resides in.
+                        </li>
+                    </ul>
+                </div>
+                <h class="top-margin">Softwares I used: </h>
+                <div class="software-section">
+                    <div class="software-element">
+                        <img src="assets/logos/unity-game-engine-icon.png">
+                        <p>Unity</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/autodesk-maya-logo.png">
+                        <p>Autodesk Maya</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-substance-3d-painter-icon.png">
+                        <p>Adobe Substance Painter 3D</p>
+                    </div>
+                    <div class="software-element">
+                        <img src="assets/logos/adobe-photoshop-icon.png">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                </div>
+                <h class="top-margin">My other projects: </h>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="slotwars.html">
+                        <img src="assets\Slot Wars GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Slot Wars</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element small-element-margin">
+                    <a href="keyplunderers.html">
+                        <img src="assets\Key Plunderers GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Key Plunderers</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element" style="margin-right: 10px;">
+                    <a href="theeggthatshoots.html">
+                        <img src="assets\TheEggthatShoots GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>The Egg that Shoots</h>
+                        </div>
+                    </a>
+                </div>
+                <div class="small-element">
+                    <a href="jumpingcaps.html">
+                        <img src="assets\Jumping Caps GameplayGIF.gif" class="menu-image"></img>
+                        <div class="overlay-text">
+                            <h>Jumping Caps</h>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="socials top-margin">
+                <a href="https://www.linkedin.com/in/morgan-lowe-9207ba2b8/"class="social">
+                    <img src="assets\linkedin.png"></img>
+                </a>
+                <a href="https://github.com/MorganLoweGit"class="social">
+                    <img src="assets\github.png"></img>
+                </a>
+                <a href="mailto:morganwtlowe@gmail.com"class="social">
+                    <img src="assets\email.png"></img>
+                </a>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
